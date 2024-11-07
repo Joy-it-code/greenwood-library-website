@@ -1,3 +1,7 @@
+ 
+
+---
+
 # Capstone Project: Enhancing a Community Library Website
 
 ## Background Scenario
@@ -6,166 +10,175 @@ You are part of a development team tasked with enhancing the website for the Gre
 
 Two team members, Morgan and Jamie, will work on separate sections:
 
-Morgan will add the Book Reviews section.
-Jamie will update the Events page with new community events.
-
+- **Morgan** will add the Book Reviews section.
+- **Jamie** will update the Events page with new community events.
 
 ## Objectives
 
-* Practice cloning a repository and working with branches in Git.
+- Practice cloning a repository and working with branches in Git.
+- Gain experience in staging, committing, and pushing changes.
+- Create pull requests and merge them after resolving potential conflicts.
 
-* Gain experience in staging, committing, and pushing changes.
+## Setup
 
-* Create pull requests and merge them after resolving potential conflicts.
+### 1. Create a Repository on GitHub:
 
+1. Name the repository `greenwood-library-website`.
+2. Initialize it with a `README.md` file.
 
- ## Setup
+   ![Create Repository](./img/1.createRepo.png)
 
- 1. Create a Repository on GitHub:
+   ![Repository Name and README](./img/2.reponame-readme-createrepo.png)
 
- ![](./img/1.createRepo.png)
+### 2. Clone the Repository to Your Local Machine
 
- * Name it greenwood-library-website
+Clone the repository using the following command:
 
- * Initialize it with a README.md file
+```bash
+git clone https://github.com/Joy-it-code/greenwood-library-website.git
+```
 
-![](./img/2.reponame-readme-createrepo.png)
+![Git Clone](./img/4.gitclone.png)
 
+## Tasks
 
-2. Copy the Repository to your local machine
+### 1. Ensure Basic Web Pages Exist
 
-![](./img/3.copyrepo.png)
+In the main branch, using Visual Studio Code or another editor, ensure the following files are created:
 
+- `home.html`
+- `about_us.html`
+- `events.html`
+- `contact_us.html`
 
-* Clone the repository to your local machine by running the following command:
+   ![Create Files](./img/6.createfile.png)
 
- git clone https://github.com/Joy-it-code/greenwood-library-website.git
-    
+### 2. Add Content to Each Page
 
- ![](./img/4.gitclone.png)
+Add random content to each of these files:
 
- 
- 
- ## Tasks
+- **`home.html`**:
 
+   ![Random Content for Home](./img/10.randomcontenthome.png)
 
- 1. **In the main branch, using Visual Studio Code editor ensure there are files for each of the web pages.**
+- **`about_us.html`**:
 
-   * home.html
+   ![Content for About Us](./img/7.writeforaboutus.png)
 
-   * about_us.html
+- **`events.html`**:
 
-   * events.html
+   ![Random Content for Events](./img/9.randomcontentforevent.png)
 
-   * contact_us.html
+- **`contact_us.html`**:
 
-  
- ![](./img/6.createfile.png)
+   ![Random Content for Contact Us](./img/8.randomcontentforcontactus.png)
 
+### 3. Stage, Commit, and Push Changes
 
-2. **Add any random content into each of the files:**
+Stage, commit, and push changes to the main branch to simulate the team’s existing codebase.
 
-* Random content into home.html
+```bash
+git add .
+git commit -m "first commit: Add basic web pages"
+git push origin main
+```
 
-![](./img/10.randomcontenthome.png)
+![Staging](./img/11.staging.png)
+![Committing](./img/12.commiting.png)
+![Pushing](./img/13.push.png)
 
-* Random content into about_us.html
+---
 
-![](./img/7.writeforaboutus.png)
+## Morgan's Work: Adding Book Reviews
 
-* Random content for events.html
+### 1. Create a Branch for Morgan
 
-![](./img/9.randomcontentforevent.png)
-
-* Random content for contact_us.html
-
-![](./img/8.randomcontentforcontactus.png)
-
-
-3. Stage, commit, and push the changes directly to the main branch: (This is a simulation of the team's existing code base for the website).
-
-   git add .
-   git commit -m "first commit: Add basic web pages"
-   git push origin main
-
-
-![](./img/11.staging.png)
-
-![](./img/12.commiting.png)
-
-![](./img/13.push.png)
-
-## **Morgan's Work: Adding Book Reviews**
-
-1. **Create a branch for Morgan**
-
+```bash
 git branch add-book-reviews
+```
 
-2. **Switch to the new branch named add-book-reviews**
+### 2. Switch to the `add-book-reviews` Branch
+
+```bash
 git checkout add-book-reviews
+```
 
-3. **Add a new file book_reviews.html to represent the Book Reviews section:**
+### 3. Add the `book_reviews.html` File
 
+```bash
 touch book_reviews.html
+```
 
+### 4. Add Content to `book_reviews.html`
 
-4. **Add a random content into the file.**
+Add random content to the file.
 
-![](./img/16.randomtextformorgan.png)
+   ![Content for Book Reviews](./img/16.randomtextformorgan.png)
 
-5. **Stage, Commit, and Push Changes**
+### 5. Stage, Commit, and Push Changes
 
+```bash
 git add .
 git commit -m "Add Book Reviews section"
 git push origin add-book-reviews
+```
 
+![Stage, Commit, Push for Book Reviews](./img/17.stagecommitpushbookreview.png)
 
-![](./img/17.stagecommitpushbookreview.png)
+### 6. Create a Pull Request for Morgan’s Work
 
-6. **Raise a PR for Morgan's work.**
+   ![Create PR for Morgan](./img/18.createpr.png)
 
-![](./img/18.createpr.png)
+### 7. Merge Morgan’s Work to the Main Branch
 
-7. **Merge Morgan's work to the main branch**
+   ![Merge Morgan’s Work](./img/19.mergemorgan.png)
 
-![](./img/19.mergemorgan.png)
+---
 
+## Jamie's Work: Updating Events Page
 
-## **Jamie's Work: Updating Events Page**
+### 1. Create a Branch for Jamie
 
-1. **Create a branch for Jamie:**
-
+```bash
 git branch update-events
+```
 
-2. **switch to new branch**
+### 2. Switch to the `update-events` Branch
 
+```bash
 git checkout update-events
+```
 
-![](./img/20a.createbranchjamie.png)
+   ![Create and Switch to Jamie's Branch](./img/20a.createbranchjamie.png)
 
-3. **Add a new file updating_events**
+### 3. Add a New File `updating_events`
 
-![](./img/20b.createfilejamie.png)
+   ![Create File for Jamie](./img/20b.createfilejamie.png)
 
-4. **Add a random content into the file.**
+### 4. Add Content to the New File
 
-![](./img/21.randontextJamie.png)
+Add random content to the file.
 
-5. **Stage, Commit, and Push Changes**
+   ![Content for Updating Events](./img/21.randontextJamie.png)
 
+### 5. Stage, Commit, and Push Changes
+
+```bash
 git add .
-git commit -m "Update Events page with new community events"
+git commit -m "update file"
 git push origin update-events
+```
 
-![](./img/22.stagecommitjamie.png)
-![](./img/22b.gitpushjamie.png)
+   ![Stage, Commit for Jamie](./img/22.stagecommitjamie.png)
+   ![Push for Jamie](./img/22b.gitpushjamie.png)
 
+### 6. Create a Pull Request for Jamie’s Work
 
-6.  **Raise a Pull Request for Jamie's work.**
+   ![Create PR for Jamie](./img/23.jamie'spr.png)
 
-![](./img/23.jamie'spr.png)
+### 7. Merge Jamie’s Work to the Main Branch
 
-7. **Merge Jamie's work to the main branch**
-  
-![](./img/24.jamie'smerge.png)
+   ![Merge Jamie’s Work](./img/24.jamie'smerge.png)
+
+---
 
